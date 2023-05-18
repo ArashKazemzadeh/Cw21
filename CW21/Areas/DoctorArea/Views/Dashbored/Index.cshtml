@@ -1,0 +1,68 @@
+﻿@using CW21.DAL.Entities
+@model List<CW21.DAL.Entities.Appoinment>
+
+
+
+
+<h1>
+    خوش آمدید دکتر!!!
+</h1>
+
+
+<a class="btn btn-primary" asp-area="DoctorArea" asp-controller="Appointment" asp-action="Create" asp-route-id="1">اضافه کردن نوبت</a>
+
+
+
+
+<table class="table table-striped w-100">
+    <thead>
+    <th>id</th>
+    <th>starttime</th>
+    <th>endtime</th>
+    <th>description</th>
+    <th>patient</th>
+    
+    </thead>
+    <tbody>
+    
+        
+        @foreach (var item in @Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.StartTime</td>
+                <td>@item.EndTime</td>
+                <td>@item.Description</td>
+                @if (@item.Patient == null)
+                {
+                    <td>خالی...</td>    
+                }
+                else
+                {
+                    <td>@item.Patient.FirstName @item.Patient.LastName</td>
+                }
+            
+            </tr>            
+        }
+        
+        
+        
+
+    
+    <tr>
+        
+    </tr>
+    
+    
+    </tbody>
+    
+    
+    
+    
+    
+</table>
+
+
+
+
+

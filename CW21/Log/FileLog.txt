@@ -1,0 +1,5 @@
+2023-05-18 16:05:46.482 +03:30 [ERR] Dorood bar shoma: Attempted to divide by zero.
+2023-05-18 16:22:17.239 +03:30 [ERR] Dorood bar shoma: Attempted to divide by zero.
+2023-05-18 16:25:53.391 +03:30 [ERR] Dorood bar shoma: Attempted to divide by zero.
+2023-05-18 16:26:46.607 +03:30 [ERR] Dorood bar shoma: Attempted to divide by zero.
+2023-05-18 16:39:30.987 +03:30 [ERR] Dorood bar shoma: Attempted to divide by zero.
